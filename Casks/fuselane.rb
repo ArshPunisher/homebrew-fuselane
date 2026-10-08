@@ -7,16 +7,14 @@ cask "fuselane" do
   desc "Download one file over every network you have at once"
   homepage "https://github.com/ArshPunisher/fuselane"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Fuselane.app"
 
   # Open source and ad-hoc signed, not notarized (no paid Apple account, by policy).
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Fuselane.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Fuselane.app"]
   end
 
-  zap trash: [
-    "~/Library/Application Support/app.fuselane",
-  ]
+  zap trash: "~/Library/Application Support/app.fuselane"
 end
