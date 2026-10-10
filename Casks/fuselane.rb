@@ -1,11 +1,11 @@
 cask "fuselane" do
-  version "0.1.0-beta.8"
-  sha256 "04b320b0086220d71eec3796105cd1569c3b2b325a7540fbd9f42cb0e1a2cdc8"
+  version "0.1.0-beta.9"
+  sha256 "a5a802658f94bc5a32090bdb97d170b92ff8e2fbac545c4ae8ae438a16876368"
 
   url "https://github.com/ArshPunisher/fuselane/releases/download/v#{version}/Fuselane_#{version}_macos-universal.dmg"
   name "Fuselane"
   desc "Download one file over every network you have at once"
-  homepage "https://github.com/ArshPunisher/fuselane"
+  homepage "https://fuselane.app"
 
   depends_on macos: :ventura
 
