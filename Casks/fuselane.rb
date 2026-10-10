@@ -1,6 +1,6 @@
 cask "fuselane" do
-  version "0.1.0-beta.9"
-  sha256 "a5a802658f94bc5a32090bdb97d170b92ff8e2fbac545c4ae8ae438a16876368"
+  version "0.1.0-beta.10"
+  sha256 "c2873bb20a22fdae507b0cecf51fece7a5a29d7f1c065a5345ae57a2e05be060"
 
   url "https://github.com/ArshPunisher/fuselane/releases/download/v#{version}/Fuselane_#{version}_macos-universal.dmg"
   name "Fuselane"
